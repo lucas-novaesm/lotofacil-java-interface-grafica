@@ -34,7 +34,7 @@ O sistema apresenta um menu interativo para o usuário realizar suas apostas. En
 
 Veja uma demonstração do projeto em ação:
 
-[![Assista ao vídeo](https://github.com/lucas-novaesm/lotofacil-java-interface-grafica/assets/122632100/564ffd1f-1a35-44b3-8fdf-07c61b81cb7d)
+[![Assista ao vídeo](https://github.com/lucas-novaesm/lotofacil-java-interface-grafica/assets/122632100/564ffd1f-1a35-44b3-8fdf-07c61b81cb7d)](https://github.com/lucas-novaesm/lotofacil-java-interface-grafica/assets/122632100/564ffd1f-1a35-44b3-8fdf-07c61b81cb7d)
 
 ## Como rodar o projeto
 
