@@ -1,49 +1,52 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loteria LOTOFÁCIL em Java</title>
-</head>
-<body>
+# Loteria LOTOFÁCIL em Java
 
-<!-- Conteúdo anterior -->
+Este é um projeto de implementação da loteria LOTOFÁCIL em Java. O sistema é capaz de gerar jogos aleatórios, permitir que os jogadores façam suas apostas, verificar os resultados e calcular prêmios de acordo com as regras da loteria. Este sistema funciona por meio do terminal, lendo e escrevendo dados.
 
-<h1>Loteria LOTOFÁCIL em Java</h1>
+## Regras de negócio/requisitos:
 
-<p>Este é um projeto de implementação da loteria LOTOFÁCIL em Java. O sistema é capaz de gerar jogos aleatórios, permitir que os jogadores façam suas apostas, verificar os resultados e calcular prêmios de acordo com as regras da loteria. Este sistema funciona por meio do terminal, lendo e escrevendo dados.</p>
+### Menu LOTOFÁCIL:
 
-<h2>Regras de negócio/requisitos:</h2>
+O sistema apresenta um menu interativo para o usuário realizar suas apostas. Enquanto o usuário não digitar 0 para sair, novas apostas serão permitidas.
 
-<!-- Regras de negócio -->
+### Regras para a aposta de 0 a 100:
 
-<h3>Menu LOTOFÁCIL:</h3>
+- Utilizando a biblioteca `Scanner`, o usuário deve digitar um número inteiro de 0 a 100 via teclado. Caso o número seja maior que 100 ou menor que 0, uma mensagem de "Aposta inválida." é exibida.
+- Utiliza-se a biblioteca `Random` para sortear aleatoriamente um número de 0 a 100.
+- Compara-se o número escolhido pelo usuário com o número sorteado pelo sistema.
+  - Se o usuário acertar a aposta, imprime-se "Você ganhou R$ 1.000,00 reais.". Caso contrário, imprime-se "Que pena! O número sorteado foi: X.".
 
-<p>O sistema apresenta um menu interativo para o usuário realizar suas apostas. Enquanto o usuário não digitar 0 para sair, novas apostas serão permitidas.</p>
+### Regras para a aposta de A à Z:
 
-<!-- Outras regras de negócio -->
+- Utiliza-se o método `System.in.read()` para ler um caractere de A à Z via teclado, podendo ser lido como maiúsculo ou minúsculo. Caso não seja uma letra, exibe-se a mensagem "Aposta inválida.". Utiliza-se o método `Character.isLetter()` para verificar se a entrada digitada é uma letra válida.
+- Converte-se a entrada do usuário para maiúsculo utilizando `Character.toUpperCase()`.
+- Escolhe-se uma letra inicial para ser a letra premiada.
+- Compara-se a letra lida com a letra premiada.
+  - Se o usuário acertar a aposta, imprime-se "Você ganhou R$ 500,00 reais.". Caso contrário, imprime-se "Que pena! A letra sorteada foi: X.".
 
-<h2>Como rodar o projeto</h2>
+### Regras para a aposta de número par ou ímpar:
 
-<ol>
-    <li>Certifique-se de ter o JDK (Java Development Kit) instalado em sua máquina.</li>
-    <li>Clone este repositório.</li>
-    <li>Navegue até o diretório do projeto.</li>
-    <li>Compile o código-fonte.</li>
-    <li>Execute o programa.</li>
-    <li>Siga as instruções exibidas no terminal para fazer suas apostas na LOTOFÁCIL.</li>
-    <li>Divirta-se!</li>
-</ol>
+- Utiliza-se o `Scanner` para ler um número inteiro via teclado.
+- Utiliza-se o operador de módulo (%) para verificar se o número é par ou ímpar.
+  - Se o resto da divisão do número por 2 for 0, o número é par.
+- Se o número digitado for par, imprime-se "Você ganhou R$ 100,00 reais.". Caso contrário, imprime-se "Que pena! O número digitado é ímpar e a premiação foi para números pares.".
 
-<h2>Vídeo do Projeto</h2>
+## Vídeo do Projeto
 
-<!-- Espaço para o vídeo -->
 <div>
     <video width="560" height="315" controls>
-        <source src="videos/videoProjeto.mp4" type="video/mp4">
+        <source src="src/videos/videoProjeto.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
 </div>
 
-</body>
-</html>
+## Como rodar o projeto
+
+1. Certifique-se de ter o JDK (Java Development Kit) instalado em sua máquina.
+2. Clone este repositório.
+3. Navegue até o diretório do projeto.
+4. Compile o código-fonte.
+5. Execute o programa.
+6. Siga as instruções exibidas no terminal para fazer suas apostas na LOTOFÁCIL.
+7. Divirta-se!
+
+Este projeto foi desenvolvido utilizando a versão do JDK 8 e não requer bibliotecas externas além das fornecidas pelo próprio Java.
